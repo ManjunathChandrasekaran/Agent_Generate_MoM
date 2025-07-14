@@ -92,7 +92,7 @@ def main(audio_path, output_file="minutes_of_meeting.txt"):
         save_transcription(transcription, output_file="./output/raw_transcription.txt")
 
         # Step 2: Load Llama-3.1-8B-Instruct
-        model_path = "./models/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf"
+        model_path = r"C:\Manju\LLM_Models\Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf"
         if not os.path.exists(model_path):
             raise FileNotFoundError(f"Llama model not found at: {model_path}")
 
